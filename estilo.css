@@ -78,3 +78,9 @@ body {
 .card-body{
     background-color: var(--color-fondo);
 }
+
+.btn-primary{
+    background-color: var(--color-fuente);
+    color: var(--color-fondo);
+    border: none;
+}
