@@ -1,16 +1,16 @@
 :root {
-    --color-fuente: #000000;
-    --color-fondo: rgb(255, 255, 255);
+    --colorFuente: #3F3B3A;
+    --colorFondo: rgb(255, 255, 255);
 }
 
 [tema="light"]{
-    --color-fuente: rgb(255, 255, 255);
-    --color-fondo: rgb(0, 0, 0);
+    --colorFuente: rgb(255, 255, 255);
+    --colorFondo: #3F3B3A;
 }
 
 body {
-  background-color:var(--color-fondo);
-  color:var(--color-fuente) 
+  background-color:var(--colorFondo);
+  color:var(--colorFuente) 
 }
 
 
@@ -21,6 +21,8 @@ body {
     display: inline-block;
     width: 60px;
     height: 34px;
+    margin-left: 25vh;
+    top: 2em;
   }
   
   #switch input { 
@@ -36,7 +38,7 @@ body {
     left: 0;
     right: 0;
     bottom: 0;
-    background-color:var(--color-fuente);
+    background-color:var(--colorFuente);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -48,17 +50,17 @@ body {
     width: 26px;
     left: 4px;
     bottom: 4px;
-    background-color:var(--color-fondo);
+    background-color:var(--colorFondo);
     -webkit-transition: .4s;
-    transition: .4s;
+    transition: .5s;
   }
   
   input:checked + .slider {
-    background-color: var(--color-fuente);
+    background-color: var(--colorFuente);
   }
   
   input:focus + .slider {
-    box-shadow: 0 0 1px var(--color-fuente);
+    box-shadow: 0 0 1px var(--colorFuente);
   }
   
   input:checked + .slider:before {
@@ -76,11 +78,26 @@ body {
   }
 
 .card-body{
-    background-color: var(--color-fondo);
+    background-color: var(--colorFondo);
 }
 
 .btn-primary{
-    background-color: var(--color-fuente);
-    color: var(--color-fondo);
+    background-color: var(--colorFuente);
+    color: var(--colorFondo);
     border: none;
+    margin-left: 25%;
+}
+
+.card-text{
+  text-align: left;
+  font-size: 80%;
+}
+
+.card-title{
+  text-align: left;
+}
+
+.card{
+  margin: 0 auto;
+  top: 5em;
 }
